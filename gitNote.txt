@@ -14,6 +14,9 @@ git config命令的--global参数，用了这个参数，表示你这台机器�
 									.git目录，默认是隐藏的，用ls -ah命令就可以看见。
 									不一定必须在空目录下创建Git仓库，选择一个已经有东西的目录也是可以的
 
-
+3.提交本地代码
+	
+	git add gitNote.txt
+ 	git commit -m "about learn git"   commit可以一次提交很多文件，所以你可以多次add不同的文件
 
 
