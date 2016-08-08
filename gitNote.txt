@@ -1,0 +1,19 @@
+
+1.安装完，Git Bash
+	$ git config --global user.name "jsLancer"
+	$ git config --global user.email "1576243123@qq.com"
+	
+git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置
+
+2.
+	$ mkdir /E/code/learnGit
+	$ cd /E/code/learnGit
+	$ pwd							pwd命令用于显示当前目录
+
+	$ git init 						把这个目录变成Git可以管理的仓库
+									.git目录，默认是隐藏的，用ls -ah命令就可以看见。
+									不一定必须在空目录下创建Git仓库，选择一个已经有东西的目录也是可以的
+
+
+
+
