@@ -40,3 +40,27 @@ git config命令的--global参数，用了这个参数，表示你这台机器�
 	要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
 
 
+6.管理修改
+	
+	git add 将工作区修改放入暂存区，git commit 将暂存区修改放入版本库
+	
+	cat gitNote.txt                Ctrl+D结束输入
+	git diff HEAD -- gitNote.txt   可以查看工作区和版本库里面最新版本的区别
+
+7.撤销修改
+
+	工作区
+	$ git checkout -- gitNote.txt		文件在工作区的修改全部撤销,
+										就是让这个文件回到最近一次git commit或git add时的状态
+
+	暂存区
+	git reset HEAD gitNote.txt 			把暂存区的修改撤销掉（unstage），重新放回工作区
+
+
+8.删除文件
+	
+	$ rm test.txt 						删除工作区文件
+	$ git rm test.txt
+	$ git commit -m "remove test.txt" 	删除版本控制区文件
+	$ git checkout -- test.txt			版本库里的版本替换工作区的版本，
+										无论工作区是修改还是删除，都可以“一键还原”
